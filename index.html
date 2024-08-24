@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="stars-group-1"></div>
+  <div id="stars-group-2"></div>
+  <div id="stars-group-3"></div>
+  <div id="stars-group-4"></div>
+  <div id="stars-group-5"></div>
+  <div id="stars-group-6"></div>
+  
+  <div id="text-container">
+    <div id="pfp-circle"></div>
+    <p id="text"></p>
+  </div>
+
+  <script>
+      const str = " To live is the rarest thing in the world. Most people exist, that is all.";
+      const text = document.getElementById("text");
+      const angle = 360 / str.length;
+      window.onload = function(){
+          for (let i = 0; i < str.length; i++) {
+              let span = document.createElement('span');
+              span.innerHTML = str[i] === " " ? "&nbsp;" : str[i]; 
+              text.appendChild(span);
+              span.style.transform = `rotate(${angle*i}deg)`;
+          }
+      }
+  </script>
+
+  <div class="info-container">
+    <h1> jada chesney <br>
+   -- computer scientist </h1>
+
+    <h2> bachelor of science in computer science <br>
+    sheffield hallam 2027 graduate <br>
+    interest in security, networking, and hardware</h2>
+  </div>
+
+
+</body>
+</html>
