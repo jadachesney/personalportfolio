@@ -63,12 +63,13 @@ h2 {
 
 .button {
     background-color:#0a0a0a;
-    font-family: 'winkle-regular';
     color: white;
     font-size: 20px;
-    padding: 20px 20px; 
+    height: 10px;
+    width: 10px;
+    padding: 10px 10px; 
     text-align: center;
-    box-shadow: 0 8px 8px 0 darkblue, 0 8px 8px darkblue;
+    box-shadow: 0 8px 8px 0 whitesmoke, 0 8px 8px whitesmoke;
     border-radius: 4px;
 }
 
