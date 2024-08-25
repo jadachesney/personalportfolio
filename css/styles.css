@@ -68,7 +68,7 @@ h2 {
     font-size: 20px;
     padding: 20px 20px; 
     text-align: center;
-    box-shadow: 0 8px 8px 0 white, 0 8px 8px 0 white;
+    box-shadow: 0 8px 8px 0 darkblue, 0 8px 8px darkblue;
     border-radius: 4px;
 }
 
