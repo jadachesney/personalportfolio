@@ -79,7 +79,14 @@ h2 {
     box-shadow: 0 0 9px whitesmoke, 0 0 9px whitesmoke;
     border-radius: 10px;
     margin-top: 2rem;
-    margin-right: 2rem;
+    margin-right: 3.5rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: #0a0a0a;
 }
 
 /* circle text*/
