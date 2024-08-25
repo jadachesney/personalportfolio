@@ -62,7 +62,7 @@ h2 {
 }
 
 .button {
-    background-color: #0a0a0a;
+    background-color: blue;
     color: white;
     transition-duration: 0.4s;
     font-size: 10px;
