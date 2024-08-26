@@ -117,12 +117,14 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+
 p{
     height: 450px;
     width: 450px;
     position: relative;
     animation: effect 20s linear infinite; 
 }
+
 
 @keyframes effect {
     0%{
