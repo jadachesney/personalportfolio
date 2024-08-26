@@ -13,7 +13,6 @@ body {
     align-items: center;
 }
 
-
 /* font */
 
 @font-face {
@@ -61,6 +60,8 @@ h2 {
     margin: 0;
 }
 
+/*index stuff*/
+
 .info-container {
     position: absolute;
     top: 30%; 
@@ -79,9 +80,14 @@ h2 {
     box-shadow: 0 0 9px whitesmoke, 0 0 9px whitesmoke;
     border-radius: 10px;
     margin-top: 2rem;
-    margin-right: 3.5rem;
     cursor: pointer;
     transition-duration: 0.4s;
+    width: 100px
+}
+
+.button-spacing {
+    display: flex;
+    justify-content: space-between;
 }
 
 .button:hover {
