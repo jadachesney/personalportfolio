@@ -95,57 +95,16 @@ h2 {
     color: #0a0a0a;
 }
 
-/* circle text*/
 
-
-#text-container {
-    position: absolute;
-    top: 45%;
-    left: 15%; 
-    transform: translateY(-50%); 
-    text-align: center; 
-}
-  
 #pfp-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 400px;
-    width: 400px;
-    background: url('imagecircle.png');
-    background-size: cover;
-    transform: translate(-50%, -50%);
-}
-
-
-p{
-    height: 450px;
-    width: 450px;
-    position: relative;
-    animation: effect 20s linear infinite; 
-}
-
-
-@keyframes effect {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-span{
-    position: absolute;
-    left: 50%;
-    transform-origin: 0px 225px;
-    transform-style: flat;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: lighter;
-    text-transform: lowercase;
-    color: white;
-    white-space: nowrap;
-}
+    position: absolute; /*makes this above stars*/
+    margin-right: 850px;
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    background: url('mecircle.png');
+    outline: 4px solid #fff;
+}  
 
 
 /* stars */

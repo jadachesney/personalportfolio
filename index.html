@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Home</title>
-  <link rel="stylesheet" href="../personalportfolio/css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <div id="stars-group-1"></div>
@@ -13,24 +13,7 @@
   <div id="stars-group-5"></div>
   <div id="stars-group-6"></div>
   
-  <div id="text-container">
-    <div id="pfp-circle"></div> 
-    <p id="text"></p> <!-- CHANGE THIS TO A CUSTOM CLASS? cause its rotating all <p>-->
-  </div>
-
-  <script>
-      const str = " To live is the rarest thing in the world. Most people exist, that is all.";
-      const text = document.getElementById("text");
-      const angle = 360 / str.length;
-      window.onload = function(){
-          for (let i = 0; i < str.length; i++) {
-              let span = document.createElement('span');
-              span.innerHTML = str[i] === " " ? "&nbsp;" : str[i]; 
-              text.appendChild(span);
-              span.style.transform = `rotate(${angle*i}deg)`;
-          }
-      }
-  </script>
+  <div id="pfp-circle"></div> 
 
   <div class="info-container">
     <h1> jada chesney <br>
