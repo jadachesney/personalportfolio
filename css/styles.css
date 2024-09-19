@@ -2,7 +2,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* font */
@@ -47,7 +48,7 @@ body {
 
 h1 {
     font-family: 'italicmono';
-    color: white;
+    color: #e8e8e8;
     font-size: 3rem;
     margin: 0;
     margin-bottom: 1rem;
@@ -106,8 +107,302 @@ h2 {
     outline: 4px solid #fff;
 }  
 
+/* about me */
 
-/* stars */
+.line-1{
+    position:fixed;
+    top: 20%;  
+    width: 24em;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color:#e8e8e8;
+    font-family: 'buttons';
+    font-weight: 200;
+}
+
+.profile-container {
+    width: 725px;
+    left: 147px;
+    top: 213px;
+    position: absolute;
+}
+
+.profile-intro {
+    width: 373px;
+    height: 148px;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.intro-text {
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.intro-heading {
+    color: #606060;
+    font-size: 55px;
+    font-family: 'italicmono';
+    font-weight: 700;
+    line-height: 66px;
+    word-wrap: break-word;
+}
+
+.intro-subheading {
+    color: #606060;
+    font-size: 55px;
+    font-family: 'italicmono';
+    font-weight: 700;
+    line-height: 66px;
+    word-wrap: break-word;
+}
+
+.intro-empty-space {
+    color: #606060;
+    font-size: 68px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 81.6px;
+    word-wrap: break-word;
+}
+
+.intro-name {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.name-primary {
+    color: white;
+    font-size: 68px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 700;
+    line-height: 70.6px;
+    white-space: nowrap;
+
+}
+
+.profile-details {
+    width: 725px;
+    height: 151px;
+    position: absolute;
+    top: 199px;
+}
+
+.details-description {
+    width: 725px;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-family: 'regmono';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.details-about {
+    width: 604px;
+    position: absolute;
+    top: 73px;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-family: 'regmono';
+    font-weight: 400;
+    line-height: 25.92px;
+    word-wrap: break-word;
+}
+
+a{
+    text-decoration: none;  
+    color: inherit;
+    font-weight: bold;        
+}
+  
+a:hover {
+    text-decoration: underline;              
+}
+
+.images-me {
+    position: absolute;
+    left: 880px;
+    width: 100%;
+    top: -90px
+}
+
+.about-image {
+    width: 90%;
+}
+
+.about-button{
+    font-family: 'buttons';
+    background-color:#0a0a0a;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px; 
+    text-align: center;
+    box-shadow: 0 0 9px whitesmoke, 0 0 9px whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 5px;
+}
+
+.about-btn-container{
+    position: absolute;
+    left: 147px; 
+    top: 650px; 
+}
+
+/* education portion of about me */
+
+/* Main container */
+.education-main-container {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    position: absolute;
+    top: 1000px;
+    left: 147px;
+}
+
+/* Section container */
+.education-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+/* Title container */
+.education-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Main title */
+.education-main-title {
+    color: #F3F4F6;
+    font-size: 68px;
+    font-family:  "Lucida Console", monospace;
+    font-weight: 700;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+/* Highlighted title */
+.education-highlighted-title {
+    color: #fffb2c;
+    font-size: 68px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 700;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+
+/* Description */
+.education-description-text {
+    width: 730px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-family: 'regmono';
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+/* Experience cards container */
+.education-experience-cards {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 29px;
+}
+
+/* Experience card */
+.education-experience-card {
+    padding: 32px;
+    background: #1d1d1d;
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Experience date */
+.education-experience-date {
+    color: #606060;
+    font-size: 20px;
+    font-family: 'italicmono';
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+/* Position title */
+.education-position-title {
+    text-align: center;
+    color: #fffb2c;
+    font-size: 26px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    line-height: 41px;
+    word-wrap: break-word;
+}
+
+/* Company name */
+.education-company-name {
+    color: #D1D5DB;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+/* Card description */
+.education-card-description {
+    width: 286px;
+    color: #6B7280;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+/* Card inner container */
+.education-card-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Card text container */
+.education-card-text-wrapper {
+    padding: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+/* stars - need to fix?*/
 
 #stars-group-1, #stars-group-2, #stars-group-3, #stars-group-4, #stars-group-5, #stars-group-6 {
     position: fixed; 
