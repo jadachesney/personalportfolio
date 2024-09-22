@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>About Me</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../personalportfolio/css/styles.css">
 </head>
 <body>
   <div id="stars-group-1"></div>
@@ -37,7 +37,8 @@
     <button class="about-button" id="experience-button">experience</button>
     <button class="about-button" id="education-button">education</button>
   </div>
-  <!-- EDUCATION SECTION IS ACTUALLY EXPERIENCE SECTION. I REALISED TOO LATE INTO DEVELOPMENT THAT I MIXED MY WORDS UP.-->
+
+  <!-- WORK EXPERIENCE SECTION -->
   <div id="education-section" class="education-main-container">
     <div class="education-section-wrapper">
         <div class="education-title-wrapper">
@@ -121,8 +122,61 @@
           </div>
       </div>
     </div>
- </div>
+  </div>
+
+<!-- EDUCATION SECTION -->
+<div id="experience-section" class="school-main-container">
+    <div class="school-section-wrapper">
+        <div class="school-title-wrapper">
+            <div>
+                <span class="school-main-title">my </span>
+                <span class="school-highlighted-title">education</span>
+            </div>
+        </div>
+        <div class="school-description-text">
+            my education journey throughout university.<br/>
+            i currently hold a tier 4 student visa and have been living in the UK for two years. i intend to extend my visa after graduation to stay in england!
+        </div>
+    </div>
+
+    <!-- Experience Cards -->
+    <div class="school-experience-cards">
+        <!-- Card 1 -->
+        <div class="school-experience-card">
+            <div class="school-card-inner-wrapper">
+                <div class="school-experience-date"> September 2023 - 2027</div>
+                <div class="school-position-title">BSc (Hons) Computer Science</div>
+                <div class="school-company-name">Sheffield Hallam University</div>
+                <div class="school-card-text-wrapper">
+                    <div class="school-card-description">
+                        I am currently a Computer Science student at Sheffield Hallam University, United Kingdom. Deciding to switch my degree a year into university was daunting at first, but I have loved every second of it.<br>
+                        I remember the feeling of excitement and intimidation that arose during my first lecture. I had zero previous coding experience, unlike my peers who seemed to have a few years under their belt. This only made me more determined to learn as much as I could.<br>
+                        During my first year I created multiple projects for my classes, in which resulted me finishing the year with a <b>1st class final grade.</b> As an international student, this was such an accomplishing feeling to know I came so far and learned so much already.<br>
+                        I am now in my second year, where I have begun to learn <b>C++ and Python.</b> Alongside learning these technical skills, I believe the most invaluable skill I have been able to improve on is <b>communication and teamwork.</b> I have been very fortunate to learn from my amazing peers and lecturers, who have been the highlight of my university experience.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="school-experience-card">
+            <div class="school-card-inner-wrapper">
+                <div class="school-experience-date"> September 2022 - May 2023</div>
+                <div class="school-position-title">BA (Hons) Business Management</div>
+                <div class="school-company-name">The University of Sheffield</div>
+                <div class="school-card-text-wrapper">
+                    <div class="school-card-description">
+                        I completed my first year of Business Management before deciding to switch to Computer Science.<br> During my first year I wrote a business analysis report on NVIDIA, studied math relating to accounting, and was taught how to communicate and make decisions in a working environment.<br>
+                        Taking a year of business studies helped bridge the gap between my coding skills and the entrepreneurial skills needed to launch a startup in the future. I gained valuable knowledge in areas such as <b>market research and financial management.</b><br>
+                        This course, combined with what I learnt in my second semester of computer science, strengthened my understanding of how I can turn my coding projects into a viable business.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+  
+
 <script>
   document.getElementById('experience-button').addEventListener('click', function() {
     window.scrollBy({
@@ -131,6 +185,13 @@
     });
   });
 </script>
-
+<script>
+    document.getElementById('education-button').addEventListener('click', function() {
+      window.scrollBy({
+        top: 1600,
+        behavior: 'smooth'
+      });
+    });
+</script>
 </body>
 </html>
