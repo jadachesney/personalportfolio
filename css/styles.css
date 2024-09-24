@@ -8,10 +8,6 @@ html {
 body {
     background:#0a0a0a;
     min-height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
 }
 
 /* font */
@@ -113,7 +109,11 @@ h2 {
 }  
 
 /* about me */
-
+.about_main_section{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
 .line-1{
     position:fixed;
     top: 20%;  
@@ -129,36 +129,18 @@ h2 {
 }
 
 .profile-container {
-    width: 725px;
-    left: 147px;
-    top: 213px;
-    position: absolute;
+   
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
-.profile-intro {
-    width: 373px;
-    height: 148px;
-    position: absolute;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
-.intro-text {
-    display: inline-flex;
-    margin-left: 10px;
-}
 
-.intro-heading {
-    color: #606060;
-    font-size: 55px;
-    font-family: 'italicmono';
-    font-weight: 700;
-    line-height: 66px;
-    word-wrap: break-word;
-}
-
+.intro-heading,
 .intro-subheading {
     color: #606060;
     font-size: 55px;
@@ -168,18 +150,10 @@ h2 {
     word-wrap: break-word;
 }
 
-.intro-empty-space {
-    color: #606060;
-    font-size: 68px;
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    line-height: 81.6px;
-    word-wrap: break-word;
-}
 
 .intro-name {
-    display: inline-flex;
     margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .name-primary {
@@ -188,19 +162,11 @@ h2 {
     font-family: "Lucida Console", monospace;
     font-weight: 700;
     line-height: 70.6px;
-    white-space: nowrap;
 
 }
 
-.profile-details {
-    width: 725px;
-    height: 151px;
-    position: absolute;
-    top: 199px;
-}
 
 .details-description {
-    width: 725px;
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-family: 'regmono';
@@ -209,15 +175,13 @@ h2 {
 }
 
 .details-about {
-    width: 604px;
-    position: absolute;
-    top: 73px;
     color: rgba(255, 255, 255, 0.80);
     font-size: 18px;
     font-family: 'regmono';
     font-weight: 400;
     line-height: 25.92px;
     word-wrap: break-word;
+    margin-top: 30px;
 }
 
 a{
@@ -230,15 +194,10 @@ a:hover {
     text-decoration: underline;              
 }
 
-.images-me {
-    position: absolute;
-    left: 880px;
-    width: 100%;
-    top: -90px
-}
+
 
 .about-image {
-    width: 90%;
+    width: 700px;
 }
 
 .about-button{
@@ -252,14 +211,10 @@ a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 5px;
+    margin: 30px 5px;
 }
 
-.about-btn-container{
-    position: absolute;
-    left: 147px; 
-    top: 650px; 
-}
+
 
 
 /* education portion of about me */
@@ -267,35 +222,10 @@ a:hover {
 /* Main container */
 
 .education-main-container {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 80px;
-    position: absolute;
-    top: 1000px;
-    left: 147px;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
-/* Section container */
-.education-section-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-/* Title container */
-.education-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-}
 
 /* Main title */
 .education-main-title {
@@ -326,15 +256,16 @@ a:hover {
     font-weight: 400;
     line-height: 27px;
     word-wrap: break-word;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /* Experience cards container */
 .education-experience-cards {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 29px;
-}
+   display: flex;
+   gap: 30px;
+   flex-wrap: wrap;
+} 
 
 /* Experience card */
 .education-experience-card {
@@ -342,11 +273,7 @@ a:hover {
     background: #1d1d1d;
     border-radius: 12px;
     overflow: hidden;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
+   
 }
 
 /* Experience date */
@@ -410,38 +337,16 @@ a:hover {
 }
 
 /* education ACTUAL main container fr */
-.school-main-container {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 80px;
-    position: absolute;
-    top: 1800px;
-    left: 147px;
-}
 
-/* Section container */
-.school-section-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-}
 
-/* Title container */
-.school-title-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-}
+
+
 
 /* Main title */
+.school-main-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .school-main-title {
     color: #F3F4F6;
     font-size: 68px;
@@ -470,30 +375,23 @@ a:hover {
     font-weight: 400;
     line-height: 27px;
     word-wrap: break-word;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-/* Experience cards container */
-.school-experience-cards {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px; /* Optional: adjust spacing between cards */
-    width: 100%;
+.school-experience-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
 /* Experience card */
 .school-experience-card {
     padding: 32px;
     background: #1d1d1d;
     border-radius: 12px;
-    overflow: hidden;
-    flex-direction: row; 
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 16px; 
+    overflow: hidden; 
     width: 100%; 
-    max-width: 1500px;
+    max-width: 80%;
 }
 
 /* Experience date */
@@ -551,12 +449,7 @@ a:hover {
 /* Card description text */
 .school-card-text-wrapper {
     padding: 8px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-    display: flex;
-    flex-grow: 1;
-    width: 100%; 
+
 }
 
 
@@ -564,13 +457,8 @@ a:hover {
 /* stars - need to fix? add in x coordinates past 1813px*/
 
 #stars-group-1, #stars-group-2, #stars-group-3, #stars-group-4, #stars-group-5, #stars-group-6 {
-    position: fixed; 
-    top: 0;         
-    left: 0;        
-    width: 100%;   
-    height: 100%; 
-    overflow: hidden; 
-    pointer-events: none;
+    position: fixed;  
+    
 }
 
 
@@ -669,5 +557,39 @@ a:hover {
     }
     100% {
       opacity: 0;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .profile-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 992px) {
+    .about-image{
+        width: 100%;
+    }
+    .intro-heading, .intro-subheading, .name-primary,
+    .education-main-title ,
+    .education-highlighted-title,
+    .school-main-title,
+    .school-highlighted-title{
+        font-size: 48px;
+    }
+    .education-description-text,
+    .school-description-text{
+        width: auto;
+    }
+    .education-experience-cards{
+        justify-content: center;
+    }
+    .school-experience-card{
+        max-width: fit-content;
+    }
+    .education-card-description{
+        width: auto;
     }
 }
