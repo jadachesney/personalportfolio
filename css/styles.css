@@ -99,8 +99,7 @@ h2 {
 
 
 #pfp-circle {
-    position: absolute; /*makes this above stars*/
-    margin-right: 850px;
+    position: fixed; 
     height:500px;
     width: 500px;
     border-radius: 50%;
@@ -162,7 +161,6 @@ h2 {
     font-family: "Lucida Console", monospace;
     font-weight: 700;
     line-height: 70.6px;
-
 }
 
 
@@ -452,6 +450,202 @@ padding-bottom: 100px;
 
 }
 
+/* CONTACT PAGE */
+.contact-container {
+    width: 100%;
+    height: 100%;
+    padding: 42px 181px 52px 64px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 112px;
+}
+
+.contact-header {
+    align-self: stretch;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 372px;
+}
+
+.contact-nav {
+    display: flex;
+    justify-content: right;
+    gap: 120px;
+}
+
+.contact-nav-item {
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'buttons';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-contact {
+    text-decoration: underline;
+}
+
+.contact-content {
+    align-self: stretch;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+}
+
+.contact-info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 54px;
+}
+
+.contact-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-title {
+    color: whitesmoke;
+    font-size: 64px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.contact-description {
+    width: 538px;
+    color: grey;
+    font-size: 20px;
+    font-family: 'regmono';
+    font-size: large;
+    font-weight: 800;
+    word-wrap: break-word;
+}
+
+.contact-email-block, .contact-social-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-subtitle {
+    color: #fffb2c;
+    font-size: 32px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.contact-email, .contact-social {
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'buttons';
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.contact-social {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 28px;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-label {
+    color: whitesmoke;
+    font-size: 17px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-input, .contact-textarea {
+    width: 563px;
+    background: #F7F7F7;
+    height: 46px;
+    border-radius: 10px;
+}
+
+.contact-textarea {
+    height: 165px;
+}
+
+.contact-select {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 366px;
+    background: #F7F7F7;
+    padding: 11px 16px;
+}
+
+.contact-select-label {
+    width: 130px;
+    color: #B2B2B2;
+    font-size: 14px;
+    font-family: "Lucida Console", monospace;
+    font-weight: 300;
+}
+
+.contact-select-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.contact-select-icon::before {
+    content: "";
+    width: 8.49px;
+    height: 5.66px;
+    position: absolute;
+    top: 9.34px;
+    left: 7.76px;
+    background: #222222;
+}
+
+.contact-submit-btn {
+    display: inline-flex;
+    padding: 13px 246px;
+    background: #0a0a0a;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 0 9px whitesmoke, 0 0 9px whitesmoke;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    font-family: 'buttons';
+}
+
+.contact-submit-btn:hover{
+    background-color: whitesmoke;
+    color: black;
+}
 
 
 /* stars - need to fix? add in x coordinates past 1813px*/
